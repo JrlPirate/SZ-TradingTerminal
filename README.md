@@ -10,14 +10,19 @@
 ---
 
 ## ⬇️ Скачать
+Два варианта установки — выберите тот, что удобнее:
 
-**[Скачать SZ TradingTerminal (Setup.exe)](https://github.com/JrlPirate/SZ-TradingTerminal/releases/latest/download/SZTradingTerminal-win-Setup.exe)**
+- **[Быстрая установка (один клик)](https://github.com/JrlPirate/SZ-TradingTerminal/releases/latest/download/SZTradingTerminal-win-Setup.exe)** —
+  сразу ставит программу в стандартную папку (`%LocalAppData%`), без единого диалога.
+- **[Установка с мастером (можно выбрать папку)](https://github.com/JrlPirate/SZ-TradingTerminal/releases/download/bootstrap/SZTradingTerminal-Bootstrap-Setup.exe)** —
+  привычный мастер Windows: Welcome → выбор папки → Установка → Готово.
 
-Ссылка ведёт на последнюю стабильную версию и не меняется от релиза к релизу. Полный список версий —
-на вкладке [Releases](https://github.com/JrlPirate/SZ-TradingTerminal/releases).
+Обе ссылки ведут на актуальную версию и не меняются от релиза к релизу. Полный список версий — на
+вкладке [Releases](https://github.com/JrlPirate/SZ-TradingTerminal/releases).
 
-Устанавливается в `%LocalAppData%`, без прав администратора. Дальше приложение обновляется
-автоматически при каждом входе — вручную ничего скачивать не нужно.
+По умолчанию (без прав администратора) устанавливается в `%LocalAppData%`. Дальше приложение
+обновляется автоматически при каждом входе — вручную ничего скачивать не нужно, независимо от того,
+каким из двух способов вы его установили.
 
 ### ⚠️ Про предупреждение Windows SmartScreen при первом запуске
 
@@ -58,9 +63,13 @@ Microsoft Trusted Signing, тоже недоступна: она открыта 
 ## 📦 Об этом репозитории
 
 Здесь публикуются только готовые сборки приложения — репозиторий не содержит исходного кода.
-На вкладке [Releases](https://github.com/JrlPirate/SZ-TradingTerminal/releases) также лежит отдельный
-служебный релиз `database` — капсула базы предметов, которую терминал подтягивает автоматически;
-скачивать её вручную не нужно.
+На вкладке [Releases](https://github.com/JrlPirate/SZ-TradingTerminal/releases), кроме обычных
+версий терминала, есть два постоянных служебных релиза (оба помечены **Pre-release**, поэтому не
+претендуют на статус «Latest»):
+- `database` — капсула базы предметов, которую терминал подтягивает автоматически; скачивать вручную
+  не нужно;
+- `bootstrap` — установщик с мастером (см. раздел «Скачать» выше), его тоже не нужно искать отдельно,
+  ссылка на него уже есть выше.
 
 ---
 
